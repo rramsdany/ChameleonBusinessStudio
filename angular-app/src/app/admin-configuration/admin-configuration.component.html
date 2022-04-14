@@ -1,9 +1,20 @@
-<!--Toolbar-->
 
-<mat-toolbar color = "primary">
-  <span>Admin Configuration Page</span>
-  <button mat-button>Home</button>
-  <button mat-button>About</button>
-  <button mat-button>Contact</button>
 
-</mat-toolbar>
+
+<mat-drawer-container #sideNav class="example-container" mode="side" opened>
+  <mat-drawer mode="side" opened class="example-drawer">
+    <app-sidenav-admin-config></app-sidenav-admin-config>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <app-container-admin-config></app-container-admin-config>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+
+
+
+
+
+
